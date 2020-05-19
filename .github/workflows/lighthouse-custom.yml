@@ -22,5 +22,5 @@ jobs:
           urls: |
             https://www.google.co.th
           runs: 1
-          budgetPath: '.github/lighthouse/custom-config.json'
+          budgetPath: '.github/lighthouse/lighthouserc-assertions.json'
           uploadArtifacts: true

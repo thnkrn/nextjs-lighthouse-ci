@@ -1,9 +1,9 @@
 name: Lighthouse Budget
 
 on:
-  # push:
-  #   branches:
-  #     - master
+  push:
+    branches:
+      - master
   repository_dispatch:
     types: lighthouse
 
