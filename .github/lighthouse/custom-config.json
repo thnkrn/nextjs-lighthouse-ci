@@ -1,8 +1,9 @@
 {
   "ci": {
-    "collect": {
-      "settings": {
-        "configPath": ".github/lighthouse/desktop-config.js"
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "render-blocking-resources": ["warn", { "numericValue": 0 }]
       }
     }
   }
