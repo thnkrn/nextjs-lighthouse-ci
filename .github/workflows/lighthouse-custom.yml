@@ -1,9 +1,6 @@
 name: Lighthouse Custom Config
 
 on:
-  push:
-    branches:
-      - master
   schedule:
     - cron: '*/180 * * * *'
   repository_dispatch:
