@@ -1,4 +1,4 @@
-name: Lighthouse Budget
+name: Lighthouse Custom Config
 
 on:
   push:
@@ -22,5 +22,5 @@ jobs:
           urls: |
             https://www.google.co.th
           runs: 1
-          budgetPath: '.github/lighthouse/budget.json'
+          budgetPath: '.github/lighthouse/custom-config.json'
           uploadArtifacts: true
