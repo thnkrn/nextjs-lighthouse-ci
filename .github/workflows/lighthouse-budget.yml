@@ -1,11 +1,9 @@
 name: Lighthouse Budget
 
 on:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: '0 2 * * *'
+  # push:
+  #   branches:
+  #     - master
   repository_dispatch:
     types: lighthouse
 
