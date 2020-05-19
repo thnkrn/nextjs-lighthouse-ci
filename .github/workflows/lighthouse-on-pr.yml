@@ -1,0 +1,35 @@
+name: Lighthouse on PR
+
+on:
+  pull_request:
+    branches:
+      - master
+  repository_dispatch:
+    types: lighthouse
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy to Now
+        id: now
+        uses: amondnet/now-deployment@v1
+        with:
+          zeit-token: ${{ secrets.ZEIT_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Lighthouse Report
+        uses: justinribeiro/lighthouse-action@v1.0.1
+        with:
+          url: ${{ steps.now.outputs.preview-url }}
+          secret: ${{ secrets.GITHUB_TOKEN }}
+          wptConnectionSpeed: threegfast
+
+      - name: Saving Lighthouse Audit Artifacts
+        uses: actions/upload-artifact@master
+        with:
+          name: lighthouse-artifacts
+          path: './results'
