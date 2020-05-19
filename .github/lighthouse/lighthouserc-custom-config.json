@@ -1,7 +1,6 @@
 {
   "ci": {
     "assert": {
-      // "preset": "lighthouse:recommended",
       "assertions": {
         "categories:performance": ["error", {"minScore": 0.17}],
         "categories:accessibility": ["error", {"minScore": 0.80}],
