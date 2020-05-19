@@ -1,4 +1,5 @@
 # Next.js with Lighthouse ci
+This project is basic Next.js app with GitHub action to run Lighthouse ci and upload the Artifacts to GitHub
 
 ## Using this project
 To use this project, follow these steps:
