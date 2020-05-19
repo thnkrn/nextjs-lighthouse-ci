@@ -1,0 +1,45 @@
+{
+  "name": "nextjs-jest-styled-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec node ./server.js --watch ./server.js",
+    "build": "next build",
+    "start": "node ./server.js",
+    "test": "LOG_LEVEL=warn npm run test:parallel",
+    "test:sequential": "NODE_ENV=testing jest -i",
+    "test:parallel": "NODE_ENV=testing jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "next": "^9.2.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^25.1.0",
+    "jest-styled-components": "^7.0.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "snapshot-diff": "^0.7.0"
+  }
+}

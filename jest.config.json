@@ -1,0 +1,8 @@
+{
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer",
+    "<rootDir>/node_modules/snapshot-diff/serializer.js"
+  ],
+  "setupFiles": ["./setupJest.js"],
+  "moduleFileExtensions": ["js", "json"]
+}
