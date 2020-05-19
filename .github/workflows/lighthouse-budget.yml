@@ -18,7 +18,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
-            https://www.google.co.th
+            https://nextjs-lighthouse-ci.golfthanakorn.now.sh/
           runs: 1
           budgetPath: '.github/lighthouse/budget.json'
           uploadArtifacts: true

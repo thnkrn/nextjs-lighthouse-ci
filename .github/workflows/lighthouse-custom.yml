@@ -20,7 +20,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
-            https://www.google.co.th
+            https://nextjs-lighthouse-ci.golfthanakorn.now.sh/
           runs: 1
           configPath: '.github/lighthouse/lighthouserc-custom-config.json'
           uploadArtifacts: true
