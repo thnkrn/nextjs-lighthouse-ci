@@ -1,4 +1,5 @@
 # Next.js with Lighthouse ci
+This project is basic Next.js app with GitHub action to run Lighthouse ci and upload the Artifacts to GitHub
 
 ## Using this project
 To use this project, follow these steps:
@@ -12,3 +13,5 @@ npm i
 # Run the project in Development Mode
 npm run dev
 ```
+
+# Try to push code for trigger the action
