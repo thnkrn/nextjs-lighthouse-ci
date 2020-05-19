@@ -1,12 +1,9 @@
 {
   "ci": {
     "assert": {
-      "preset": "lighthouse:no-pwa",
+      "preset": "lighthouse:recommended",
       "assertions": {
-        "dom-size": ["error", {"maxNumericValue": 3000}],
-        "offscreen-images": "off",
-        "color-contrast": "off",
-        "tap-targets": "off"
+        "render-blocking-resources": ["warn", { "numericValue": 0 }]
       }
     }
   }
