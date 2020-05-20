@@ -1,4 +1,4 @@
-name: Lighthouse Custom Config
+name: Lighthouse Mobile Config
 
 on:
   push:
