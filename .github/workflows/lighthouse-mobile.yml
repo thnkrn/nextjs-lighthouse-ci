@@ -22,5 +22,5 @@ jobs:
           urls: |
             https://nextjs-lighthouse-ci.golfthanakorn.now.sh/
           runs: 1
-          configPath: '.github/lighthouse/custom-config/lighthouserc-custom-config.json'
+          configPath: '.github/lighthouse/custom-config/lighthouserc-mobile-config.json'
           uploadArtifacts: true
