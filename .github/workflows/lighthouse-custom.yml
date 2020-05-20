@@ -1,8 +1,11 @@
 name: Lighthouse Custom Config
 
 on:
-  schedule:
-    - cron: '*/180 * * * *'
+  push:
+    branches:
+      - master
+  # schedule:
+  #   - cron: '*/180 * * * *'
   repository_dispatch:
     types: lighthouse
 
@@ -19,5 +22,5 @@ jobs:
           urls: |
             https://nextjs-lighthouse-ci.golfthanakorn.now.sh/
           runs: 1
-          configPath: '.github/lighthouse/lighthouserc-custom-config.json'
+          configPath: '.github/lighthouse/custom-config/lighthouserc-custom-config.json'
           uploadArtifacts: true

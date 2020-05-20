@@ -1,8 +1,11 @@
 name: Lighthouse Budget
 
 on:
-  schedule:
-    - cron: '*/180 * * * *'
+  push:
+    branches:
+      - master
+  # schedule:
+  #   - cron: '*/180 * * * *'
   repository_dispatch:
     types: lighthouse
 
@@ -19,5 +22,5 @@ jobs:
           urls: |
             https://nextjs-lighthouse-ci.golfthanakorn.now.sh/
           runs: 1
-          budgetPath: '.github/lighthouse/budget.json'
+          budgetPath: '.github/lighthouse/budget/budget.json'
           uploadArtifacts: true
