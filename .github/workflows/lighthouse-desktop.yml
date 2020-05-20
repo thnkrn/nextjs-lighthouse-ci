@@ -1,11 +1,11 @@
 name: Lighthouse Desktop Config
 
 on:
-  push:
-    branches:
-      - master
-  # schedule:
-  #   - cron: '*/180 * * * *'
+  # push:
+  #   branches:
+  #     - master
+  schedule:
+    - cron: '*/180 * * * *'
   repository_dispatch:
     types: lighthouse
 
