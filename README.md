@@ -1,5 +1,7 @@
 # Next.js with Lighthouse ci
-This project is basic Next.js app with GitHub action to run Lighthouse ci and upload the Artifacts to GitHub
+Hosting the project on ZEIT.
+This project is basic Next.js app with GitHub action to run Lighthouse ci and upload the Artifacts to GitHub.
+Also, run the lighthouse when creating PR and uploading the report to GitHub
 
 ![Lighthouse Mobile Config](https://github.com/golfthanakorn/nextjs-lighthouse-ci/workflows/Lighthouse%20Mobile%20Config/badge.svg)
 ![Lighthouse Desktop Config](https://github.com/golfthanakorn/nextjs-lighthouse-ci/workflows/Lighthouse%20Desktop%20Config/badge.svg)
